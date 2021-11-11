@@ -51,11 +51,11 @@ let messageToUsername = document.createElement('h2');
 
 smellChosen.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    
     messageToUsername.innerHTML += `<p class="messageSent">Mensaje enviado, muchas gracias por colaborar y formar parte de nuestro crecimiento.</p> `;
     smellChosen.appendChild(messageToUsername);
 
     localStorage.setItem("aroma-elegido", (smellChosen).value);
 });
 
-alue = JSON.stringify({"key1": true, "key2": 42, "key3": "Hello World!"});
-localStorage.setItem('key', value);
