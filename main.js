@@ -105,6 +105,8 @@ function loadHtml(){
         priceTotal.innerHTML = totalCard;
         
         amountProduct.innerHTML = countProduct;
+
+        localStorage.setItem('carrito', JSON.stringify(product));
     });
 
 }
@@ -124,9 +126,10 @@ function closeBtn(){
 
 
 //guardar carrito
-localStorage.setItem('carrito', JSON.stringify(buyThings));
 
-let localS = JSON.parse(localStorage.getItem('carrito'))
+carrito = JSON.parse(localStorage.getItem("carrito"));
+
+
 
 
 
